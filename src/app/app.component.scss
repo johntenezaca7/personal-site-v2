@@ -1,9 +1,20 @@
 $object: "main-app";
 
 .#{$object} {
-  background-color: black;
+  background-image: url("https://s8.postimg.cc/boq7divmd/album-black-classic-167092.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
+
   &__title {
-    color: white;
+    font-family: "Orbitron", sans-serif;
+    padding-top: 15%;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0px 5px 5px rgba(90, 90, 90, 0.3);
   }
 }
 
@@ -15,10 +26,4 @@ $object: "main-app";
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  .#{$object} {
-    background-color: white;
-    &__title {
-      color: black;
-    }
-  }
 }
