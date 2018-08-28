@@ -18,8 +18,7 @@ $object: "main-app";
   }
 
   &__img {
-    max-width: 500px;
-    max-height: 500px;
+    display: none;
   }
 }
 
@@ -32,8 +31,26 @@ $object: "main-app";
     background-image: none;
 
     &__title {
-      padding-top: 5%;
+      padding-top: 4%;
       font-size: 50px;
+    }
+
+    &__grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__my-image {
+      margin-left: 10%;
+      padding: 0;
+    }
+
+    &__img {
+      display: block;
+      max-width: auto;
+      max-height: 400px;
+      padding: 0;
+      margin: 0;
     }
   }
 }
